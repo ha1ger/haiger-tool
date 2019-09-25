@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cos-nodejs-sdk-v5": "^2.5.12",
+    "got": "^9.6.0",
     "wx-server-sdk": "latest"
   }
 }

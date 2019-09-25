@@ -1,1 +1,2 @@
 <button open-type="getUserInfo" bindgetuserinfo='getInfo'>授权获取头像，并生成新的头像</button>
+<image wx:if="avatarUrl" src="{{avatarUrl}}" class='avatar'></image>
