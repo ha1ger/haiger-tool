@@ -1,5 +1,17 @@
 {
   "pages": [
-    "pages/index"
-  ]
-} 
+    "pages/index/index",
+    "pages/avatar/index",
+    "pages/eat/index",
+    "pages/wolf-kill/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "haiger",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "sitemapLocation": "sitemap.json"
+}

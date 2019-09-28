@@ -1,0 +1,6 @@
+<!--miniprogram/pages/index/index.wxml-->
+<image class="back-img" src="/static/images/1.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+<wux-grids>
+  <wux-grid thumb="/static/images/avatar.png" label="头像边框生成" bind:click="toAvatar" />
+  <wux-grid thumb="/static/images/eat.png" label="今晚吃点啥" bind:click="toEat" />
+</wux-grids>

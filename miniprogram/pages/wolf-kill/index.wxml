@@ -1,0 +1,11 @@
+<view class="btns">
+  <input type="number" placeholder="几个人一起玩？" value="{{playerNum}}" placeholder-style="color:#999999;" bind:change="changeNum" />
+  <button class="new-room" bindtap="newRoom">生成房间</button>
+  <input type="number" placeholder="输入房间号" value="{{roomNo}}" bind:change="changeNo" placeholder-style="color:#999999;" />
+  <button class="enter-room" bindtap="enterRoom">进入房间</button>
+</view>
+<view class="room-container">
+  <view class="no">房间号：{{}}</view>
+  <view class="total">当前房间内人数:{{}}</view>
+  <view class="identity">你的身份是：{{}}</view>
+</view>

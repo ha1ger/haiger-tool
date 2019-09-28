@@ -1,0 +1,21 @@
+<image class="back-img" src="/static/images/2.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+<view class="btn-container">
+  <button open-type="getUserInfo" bindgetuserinfo='getInfo' data-style='1'>
+    <image src="{{showAvatar[0].url}}"></image>
+    <open-data type="userAvatarUrl" class="open-data"></open-data>
+  </button>
+  <button open-type="getUserInfo" bindgetuserinfo='getInfo' data-style='2'>
+    <image src="{{showAvatar[1].url}}"></image>
+    <open-data type="userAvatarUrl" class="open-data"></open-data>
+  </button>
+  <button open-type="getUserInfo" bindgetuserinfo='getInfo' data-style='3'>
+    <image src="{{showAvatar[2].url}}"></image>
+    <open-data type="userAvatarUrl" class="open-data"></open-data>
+  </button>
+  <button open-type="getUserInfo" bindgetuserinfo='getInfo' data-style='4'>
+    <image src="{{showAvatar[3].url}}"></image>
+    <open-data type="userAvatarUrl" class="open-data"></open-data>
+  </button>
+</view>
+<text>点击头像，长按保存到本地</text>
+<!-- <image wx:if="avatarUrl" src="{{avatarUrl}}" class='avatar' bindtap="preView"></image> -->

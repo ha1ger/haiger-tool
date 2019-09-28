@@ -1,0 +1,15 @@
+<!-- miniprogram/pages/eat/index.wxml -->
+<image class="back-img" src="/static/images/3.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+<block wx:if="{{awards.length>0}}">
+  <turntable awards="{{awards}}" awardIndex="{{awardIndex}}" bind:beginTurn="beginTurn" bind:turnOver="turnOver" toTurn="{{toTurn}}"></turntable>
+  <button bind:tap="think" disabled="{{toTurn}}">在考虑下</button>
+</block>
+<view class="center" wx:else>
+  <van-field id="field" clearable size="large" value="{{eatThing}}" placeholder="想吃点啥今天？" bind:confirm="confirm" bind:change="change" data-index="0" right-icon="/static/images/checked" confirm-type="确认"></van-field>
+  <button bind:tap="enough">够了，就这些吧</button>
+  <view class="label-container">
+    <view class="label" wx:for="{{eat}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+      {{item}}
+    </view>
+  </view>
+</view>

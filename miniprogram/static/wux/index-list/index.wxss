@@ -1,0 +1,50 @@
+/* pages/index-list/index.wxss */
+
+.demo-item {
+  position: relative;
+  padding: 20rpx;
+}
+
+.demo-item:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 2rpx;
+  border-bottom: 2rpx solid #d9d9d9;
+  color: #d9d9d9;
+  transform-origin: 0 100%;
+  transform: scaleY(.5);
+}
+
+.demo-item:last-child:after {
+  display: none;
+}
+
+.labels-container {
+  padding: 20rpx 30rpx 0 30rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.label {
+  padding: 24rpx 50rpx;
+  box-sizing: border-box;
+  border-radius: 6rpx;
+  font-size: 30rpx;
+  margin-left: 18rpx;
+  margin-bottom: 20rpx;
+  border: 1px solid #adadad;
+  color: #000000;
+}
+
+.label-active {
+  border: 1px solid #f08520;
+  color: #f08520;
+}

@@ -1,0 +1,15 @@
+<wux-index height="100%" bind:change="onChange">
+    <wux-index-item wx:for="{{ alphabet }}" wx:key="" name="{{ item.initial }}" wx:for-index="index">
+        <view class="labels-container" wx:if="{{index===0}}">
+            <view class="label" bindtap="choose" data-cell="{{item.cells[0]}}">{{item.cells[0]}}</view>
+        </view>
+        <view class="labels-container" wx:elif="{{index===1}}">
+            <view class="label" wx:for="{{item.cells}}" wx:for-item="label" bindtap="choose" data-cell="{{label}}" data-Id="{{item.Id[labelIndex]}}" wx:for-index="labelIndex">{{label}}</view>
+        </view>
+        <block wx:if="{{index>1}}">
+            <view class="demo-item" wx:for="{{ item.cells }}" wx:for-item="cell" wx:key="" bindtap="choose"  wx:for-index="cellIndex">
+                <view data-cell="{{cell}}">{{ cell }}</view>
+            </view>
+        </block>
+    </wux-index-item>
+</wux-index>
